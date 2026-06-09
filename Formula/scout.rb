@@ -11,7 +11,7 @@ class Scout < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/klarlabs-studio/scout/releases/download/v1.11.1/scout_1.11.1_darwin_amd64.tar.gz"
-      sha256 "9fdeaf14c343f70e46261b148900fb47be13b1bc3c958791ab4a85d5e3bca542"
+      sha256 "f5df704eed0272a3267d01f84c0eb183fe22a7d69793c91c5dca9055bf966486"
 
       define_method(:install) do
         bin.install "scout"
@@ -19,7 +19,7 @@ class Scout < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/klarlabs-studio/scout/releases/download/v1.11.1/scout_1.11.1_darwin_arm64.tar.gz"
-      sha256 "c6a21209cc350a23a3be88890684f60616c34d3797d4b4b0a473448c6d67f194"
+      sha256 "e9d49e440c1f11af73544c4781a075e1ffef9412cc8304dfae747e11a2697e45"
 
       define_method(:install) do
         bin.install "scout"
@@ -30,14 +30,14 @@ class Scout < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/klarlabs-studio/scout/releases/download/v1.11.1/scout_1.11.1_linux_amd64.tar.gz"
-      sha256 "98858239e2c02c096bdf136db7e5d350943d2cce18f024328dfbbc6e6b71b7e4"
+      sha256 "06bdad85dac3e7c90423ef364e9ac8cae46ccdc300ecc7db88a430e40e0e4cd1"
       define_method(:install) do
         bin.install "scout"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/klarlabs-studio/scout/releases/download/v1.11.1/scout_1.11.1_linux_arm64.tar.gz"
-      sha256 "403f9860acdcdf21146edb9b6adcd6bd3ee6a9d5392c4bac14208040432c4e37"
+      sha256 "24ecc020f836c259bdfbc95552fef222277417f6a4030a6e799540d953f2d93b"
       define_method(:install) do
         bin.install "scout"
       end
