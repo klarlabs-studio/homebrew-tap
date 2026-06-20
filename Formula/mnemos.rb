@@ -5,21 +5,21 @@
 class Mnemos < Formula
   desc "Local-first evidence layer that grounds AI in truth"
   homepage "https://github.com/klarlabs-studio/mnemos"
-  version "0.20.0"
+  version "0.20.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/klarlabs-studio/Mnemos/releases/download/v0.20.0/mnemos_0.20.0_darwin_amd64.tar.gz"
-      sha256 "afd6938344f86a37a8aa79aa621cd98077bf58c4fd671d0a869708c1bbd29b3b"
+      url "https://github.com/klarlabs-studio/Mnemos/releases/download/v0.20.1/mnemos_0.20.1_darwin_amd64.tar.gz"
+      sha256 "916861449d19b053d8836befcc93a1abb0cdbd31a8bd5713537532634da0b565"
 
       define_method(:install) do
         bin.install "mnemos"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/klarlabs-studio/Mnemos/releases/download/v0.20.0/mnemos_0.20.0_darwin_arm64.tar.gz"
-      sha256 "6adffb9c8ea2cfb15eb4f92d1157a60d6a2205f9583db27e045c19299069c326"
+      url "https://github.com/klarlabs-studio/Mnemos/releases/download/v0.20.1/mnemos_0.20.1_darwin_arm64.tar.gz"
+      sha256 "4dc589344c038d491c93295d10a1fd6ab86c4582bb89550e29cfeedddc7789b0"
 
       define_method(:install) do
         bin.install "mnemos"
@@ -29,15 +29,15 @@ class Mnemos < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/klarlabs-studio/Mnemos/releases/download/v0.20.0/mnemos_0.20.0_linux_amd64.tar.gz"
-      sha256 "73b446b4015b14153fd683f362ddd70cc895a0b13f199cd466681c6202966cfc"
+      url "https://github.com/klarlabs-studio/Mnemos/releases/download/v0.20.1/mnemos_0.20.1_linux_amd64.tar.gz"
+      sha256 "7edbb65312f712056d27dcec8e20c8e81697d23fa1094da3a208c7b1736909ed"
       define_method(:install) do
         bin.install "mnemos"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/klarlabs-studio/Mnemos/releases/download/v0.20.0/mnemos_0.20.0_linux_arm64.tar.gz"
-      sha256 "618f536202fbcca80a71765d7a65d0c7b59a65d5fb259b1c73581218c65f6b94"
+      url "https://github.com/klarlabs-studio/Mnemos/releases/download/v0.20.1/mnemos_0.20.1_linux_arm64.tar.gz"
+      sha256 "367d00a0ffeb46b25fd8b41bb02ec2447a9bc3ad5b3fdbc6aaf840d0d1937a20"
       define_method(:install) do
         bin.install "mnemos"
       end
