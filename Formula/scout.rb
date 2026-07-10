@@ -5,21 +5,21 @@
 class Scout < Formula
   desc "MCP server for AI-powered browser automation"
   homepage "https://github.com/klarlabs-studio/scout"
-  version "1.14.0"
+  version "1.15.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/klarlabs-studio/scout/releases/download/v1.14.0/scout_1.14.0_darwin_amd64.tar.gz"
-      sha256 "202719d190cbb908d1d3ff4c65a142440630fa8af7c35bca4a237a4f7f92dd5d"
+      url "https://github.com/klarlabs-studio/scout/releases/download/v1.15.0/scout_1.15.0_darwin_amd64.tar.gz"
+      sha256 "603656bd8c483b742a09b1d1bbccf1e9d82985e29c3a1f07908f7d1447acd9be"
 
       define_method(:install) do
         bin.install "scout"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/klarlabs-studio/scout/releases/download/v1.14.0/scout_1.14.0_darwin_arm64.tar.gz"
-      sha256 "ad060f7b363fb07f4054c2f9328e3419be95e21236cfb8ac2b2eecfb9b571a0c"
+      url "https://github.com/klarlabs-studio/scout/releases/download/v1.15.0/scout_1.15.0_darwin_arm64.tar.gz"
+      sha256 "81a2af9f366131fb7b9e7ef05a0f62ffb33108692fc1c97bb26b5a9fdf1a790f"
 
       define_method(:install) do
         bin.install "scout"
@@ -29,15 +29,15 @@ class Scout < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/klarlabs-studio/scout/releases/download/v1.14.0/scout_1.14.0_linux_amd64.tar.gz"
-      sha256 "678f6839312150b09640122a88aa4abfba6cd033fe016120f9a8883ead572d48"
+      url "https://github.com/klarlabs-studio/scout/releases/download/v1.15.0/scout_1.15.0_linux_amd64.tar.gz"
+      sha256 "8ffd7535da1a00b323d87c3188386a243a6b90c38003fb036b0e93d24c536c59"
       define_method(:install) do
         bin.install "scout"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/klarlabs-studio/scout/releases/download/v1.14.0/scout_1.14.0_linux_arm64.tar.gz"
-      sha256 "ce874913be429f5fd8bebc9502812a326641b603ee011f23a0c308d66dd580b8"
+      url "https://github.com/klarlabs-studio/scout/releases/download/v1.15.0/scout_1.15.0_linux_arm64.tar.gz"
+      sha256 "5291567aab070f009de98de804885b889ddb01911d2f43886cc6da9f5f1e138f"
       define_method(:install) do
         bin.install "scout"
       end
