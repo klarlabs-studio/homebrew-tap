@@ -4,22 +4,22 @@ cask "roady" do
 
   on_macos do
     on_intel do
-      sha256 "c84f87a8849de5a982f5bad090bdeb891dc19d952d2ce41c514d98220063295a"
+      sha256 "d45afac6d89bcce7c34d00ca201ddd1d0071230f35065f0f70edb21383809b8f"
       url "https://github.com/klarlabs-studio/roady/releases/download/v#{version}/roady_Darwin_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "d6ba9966ce31c18ee51bcf090c87d28a03a2073ba46f2d031d0b0b1a855eb507"
+      sha256 "17d6cc85702e10e9545f2fdf3e3999462ddbd8324a7bbdee59bd27361bbad6ef"
       url "https://github.com/klarlabs-studio/roady/releases/download/v#{version}/roady_Darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "b99dc861db2f7d13745748b1f5bc91f7d9cb96b5836b5877d8af7e1a79f61ed3"
+      sha256 "83302322e3de6d4bca8bbe106055cc29c7bc9d59b635c19b1327772c5f053555"
       url "https://github.com/klarlabs-studio/roady/releases/download/v#{version}/roady_Linux_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "bcefbaac46975df1c79c90eb7e8e1c72f864ca7468156156549a837816be647f"
+      sha256 "a6500bb69d04655d8176e5cd74b66247cf1e3f64b6f8433c1278403e1eddc644"
       url "https://github.com/klarlabs-studio/roady/releases/download/v#{version}/roady_Linux_arm64.tar.gz"
     end
   end
