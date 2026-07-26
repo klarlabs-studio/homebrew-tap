@@ -4,22 +4,22 @@ cask "briefkasten" do
 
   on_macos do
     on_intel do
-      sha256 "8ddd9e63b681fd5eff8f2f29f145ac384d00214623f125c3f857e54d05465a5b"
+      sha256 "09ff88522a3f5124d04219bcc552b11616e2b9b133ad92a0b353b1f7b8ebcbd4"
       url "https://github.com/klarlabs-studio/briefkasten/releases/download/v#{version}/briefkasten_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "ecb36a94e15a712e94aab821875a2ddd4af75c56f994b129c306348e6305984b"
+      sha256 "d3aed3a9b632a381b0cf75e0d107a71042d7adb13ec169dc0ec7ac131f823197"
       url "https://github.com/klarlabs-studio/briefkasten/releases/download/v#{version}/briefkasten_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "68ca1b7bb516a90883494b8c8215ea2a2e8aabbdbb4415d3c470a706de15db8c"
+      sha256 "bd84468b0ad4d9a07b9722425072bcd94c0cc52ef6a794676c23fe268f005e16"
       url "https://github.com/klarlabs-studio/briefkasten/releases/download/v#{version}/briefkasten_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "7463e66d98fde0a45146a148bdba533aaaaf58c9e1b284dea493139f2ee5f1a5"
+      sha256 "611c81eaf1c14df4138bd4db2a9ba1763db04f2145a9c951f096002b360f5b25"
       url "https://github.com/klarlabs-studio/briefkasten/releases/download/v#{version}/briefkasten_#{version}_linux_arm64.tar.gz"
     end
   end
