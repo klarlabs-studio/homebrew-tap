@@ -11,7 +11,7 @@ class Roady < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/klarlabs-studio/roady/releases/download/v0.13.1/roady_Darwin_x86_64.tar.gz"
-      sha256 "9c8384750fb6655fcebec7530f5617c7084b0110bf53227559e7942827d82250"
+      sha256 "8b87cbdec89d1471e84a22a9bcf4c7e86be15e7e2baf5e158f57d4696e9cfb50"
 
       define_method(:install) do
         bin.install "roady"
@@ -26,7 +26,7 @@ class Roady < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/klarlabs-studio/roady/releases/download/v0.13.1/roady_Darwin_arm64.tar.gz"
-      sha256 "ab803dc1b1b59612ada44d353edd7e86f6719efdfe4a2430692949afa385dbd4"
+      sha256 "ec6600bc6f08c55fe53de59a045b53dc13d8e3d8bb0e466cdd29600b4a5ec0ad"
 
       define_method(:install) do
         bin.install "roady"
@@ -44,7 +44,7 @@ class Roady < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/klarlabs-studio/roady/releases/download/v0.13.1/roady_Linux_x86_64.tar.gz"
-      sha256 "a78ff0d0dad2a375a80a8926f200075ae8996560370306c9f46de5ca53855af7"
+      sha256 "9d06d3df7aee6889c634475f5699195a9c3e3505871a557fd6ed4aefcc4d77bb"
       define_method(:install) do
         bin.install "roady"
         bin.install "roady-plugin-linear"
@@ -58,7 +58,7 @@ class Roady < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/klarlabs-studio/roady/releases/download/v0.13.1/roady_Linux_arm64.tar.gz"
-      sha256 "45c41c1cb1e63b1b27269fef99f1a0c8888707287b14b6e617b41a4b21cc972a"
+      sha256 "62cea7e5354858c60cd5f738cc6584b117d433358a1019be21a84e967885bc28"
       define_method(:install) do
         bin.install "roady"
         bin.install "roady-plugin-linear"
