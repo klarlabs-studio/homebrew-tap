@@ -3,20 +3,20 @@
 class Coverctl < Formula
   desc "Declarative, domain-aware coverage enforcement for any language"
   homepage "https://github.com/klarlabs-studio/coverctl"
-  version "1.19.0"
+  version "1.20.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/klarlabs-studio/coverctl/releases/download/v#{version}/coverctl-darwin-arm64.tar.gz"
-      sha256 "703ed0c31a54366a72a8e6b371e225ffa7297f57f4dce9865cf78799e39ffeee"
+      sha256 "6b5c146a15a697b5a5cab84f58b0e783de82878365eb8abfff624bb733b4e54e"
 
       def install
         bin.install "coverctl-darwin-arm64" => "coverctl"
       end
     else
       url "https://github.com/klarlabs-studio/coverctl/releases/download/v#{version}/coverctl-darwin-amd64.tar.gz"
-      sha256 "e58d017c6e1c2ac9b55c4d8950352519af8ccaed943aa58a37f3deaafd11328b"
+      sha256 "c1a2869eba57a59dfecb2ff5e80fc159fc9541c62936efe3cd09e1d13cb9c8c4"
 
       def install
         bin.install "coverctl-darwin-amd64" => "coverctl"
@@ -27,14 +27,14 @@ class Coverctl < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/klarlabs-studio/coverctl/releases/download/v#{version}/coverctl-linux-arm64.tar.gz"
-      sha256 "46b25f88b6016d9efe6653be856017319da34de94da221fd3d0e48631613f6f1"
+      sha256 "ba0c3ab6c580c8f477e9cf6e0cabb80f7bd56cb63e7f86ae008921cdcbc9e951"
 
       def install
         bin.install "coverctl-linux-arm64" => "coverctl"
       end
     else
       url "https://github.com/klarlabs-studio/coverctl/releases/download/v#{version}/coverctl-linux-amd64.tar.gz"
-      sha256 "94ecb14809b8c00652316b9e1d69a8b7a192b7fe150f8a1c6077d3853398b8de"
+      sha256 "256b62308a4b67730dd68a24a5c8bd552d815db21267e1ba78e912272000f5f7"
 
       def install
         bin.install "coverctl-linux-amd64" => "coverctl"
